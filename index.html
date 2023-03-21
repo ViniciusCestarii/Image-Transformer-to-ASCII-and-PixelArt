@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+      <img id="img-preview">
+      <br>
+      <input type="file" accept="image/*" id="file">
+      <select id="artStyle">
+        <option value="pixelArt">Pixel Art</option>
+        <option value="asciiImage">Ascii Art</option>
+        <option value="asciiText">Ascii Art in text</option>
+        <option value="asciiPhrase">Ascii Art made of phrase</option>
+        <option value="asciiImageHacker">Ascii Art in hacker mode</option>
+        <option value="asciiVideo">Ascii Art in video</option>
+        <option value="pixelArtVideo">Pixel Art in video</option>
+      </select>
+      <button id="transformImage">Transform Image</button>
+      <button id="saveImage">Save Image</button>
+      <button id="saveGifButton" style="display: none">Save as GIF</button>
+      <button id="inputDefault">Return values to Default</button>
+      <div>
+      <label>Image Dimensions: </label>
+      <input id="dimensionInput"type="number"min="100" max="3840">
+      <label>Pixel Ratio: </label>
+      <input id="imagePixelInput"type="number"min="5" max="500">
+      <div id="colorCheckboxDiv" style="display: inline;">
+        <label>R:</label>
+        <input id="redCheckbox" value="redChecked" type="checkbox" checked="" >
+        <label>G:</label>
+        <input id="greenCheckbox" value="greenChecked" type="checkbox" checked="" >
+        <label>B:</label>
+        <input id="blueCheckbox" value="blueChecked" type="checkbox" checked="">
+        <label>Black and White:</label>
+        <input id="blackWhiteCheckbox" value="blackWhiteChecked" type="checkbox" >
+      </div>
+      <label id="textInputLabel" style="display: none">Density: </label>
+      <input id="textInput" style="display: none;" type="text" min="1" max="50">
+      <p id="obsP" style="display: none"></p>
+      </div>
+    <main id="canvas"><!-- canvas is in here-->
+    </main>
+    <div id="asciiDiv"></div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

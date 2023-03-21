@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(75, 75, 75);
+  color: #FFF;
+  font-family: 'Courier';
+  font-size: 12pt;
+  line-height: 10pt;;
+  text-align: center;
+}
+canvas {
+  margin: auto;
+  display: block;
+}
+
+img{
+  height: 400px;
+  width: 400px;
+}
+button{/*
+  border-radius: 99px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.75rem 2rem;
+*/
+  /* remove default behavior */
+  appearance:none;
+  -webkit-appearance:none;
+
+  /* usual styles */
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+}
+
+input{
+  box-sizing: border-box;
+  border-radius: 99px;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.75rem 1.5rem;
+}
+
+select {
+  padding:10px;
+  border-radius:10px;
+}
+
+
+
