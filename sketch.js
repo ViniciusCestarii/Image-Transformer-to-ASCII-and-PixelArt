@@ -312,7 +312,7 @@ function drawWithAsciiPhrase(img, phrase)
   background(0);
   let w = width / img.width;
   let h = height / img.height;
-  let index = 0;
+  let index = -1;
   img.loadPixels();
   
   for(let j = 0; j < img.height; j++){
